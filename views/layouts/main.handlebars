@@ -16,11 +16,11 @@
         <a href="/">Blog It</a>
       </h1>
        <nav>
-         {{!-- {{#if loggedIn}} --}}
+         {{#if loggedIn}}
         <button id="logout" class="btn-no-style">logout</button>
-        {{!-- {{else}} --}}
+        {{else}}
         <a href="/login">login</a>
-        {{!-- {{/if}} --}}
+        {{/if}}
         </nav>
     </header>
     <main style="display: flex; place-content: space-evenly">
@@ -30,9 +30,9 @@
       We are excited for your return!
     </footer>
   </div>
-  {{!-- {{#if loggedIn}} --}}
+  {{#if loggedIn}}
 <script src="/javascript/logout.js"></script>
-{{!-- {{/if}} --}}
+{{/if}}
 </body>
 
 </html>
