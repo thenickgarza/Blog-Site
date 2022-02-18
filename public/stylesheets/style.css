@@ -87,8 +87,8 @@
   }
   
   main {
-    display: flex;
-    flex-wrap: wrap;
+    flex: 1;
+    padding: 2% 4%;
   }
   
   .btn-no-style {
