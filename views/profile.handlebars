@@ -1,0 +1,50 @@
+{{!-- <article class="post">
+  <div class="title">
+    <a href="{{post.post_url}}" target="_blank">{{post.title}}</a>
+    {{!-- <iframe style="border-radius: 12px;" src="{{post.post_url}}" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+      
+    </iframe> --}}
+    {{!-- <span>({{post.post_url}})</span>
+  </div>
+  <div class="meta">
+    {{post.vote_count}} point(s) by {{post.user.username}} on
+    {{post.created_at}}
+    |
+    <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
+  </div>
+  {{#if loggedIn}}
+  <form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+    <button type="button" class="upvote-btn">upvote</button>
+  </div>
+</form>
+{{!-- {{/if}} --}}
+
+<div>
+        {{#each posts}}
+         <h1>{{title}}</h1> 
+          <iframe style="border-radius:12px" src={{post_url}} width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> 
+        {{/each}}
+</div>
+<div class="comments">
+  {{#each post.comments}}
+  <section class="comment">
+    <div class="meta">
+     <p> {{user.username}}: {{comment_text}} </p>
+     <p> Posted at: {{created_at}} </p>
+    </div>
+    <div class="text">
+      {{comment.comment_text}}
+    </div>
+  </section>
+  {{/each}}
+</div>
+</article>
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

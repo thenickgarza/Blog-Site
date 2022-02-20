@@ -99,7 +99,7 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     Post.update(
         {
-            title: req.body.title
+            post_url: req.body.post
         },
         {
             where: {

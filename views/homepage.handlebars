@@ -3,7 +3,8 @@
   <li>
     <article class="post">
       <div class="title">
-        <a href="{{post.post_url}}" target="_blank">{{post.title}}</a>
+        {{title}}
+        <iframe style="border-radius:12px" src={{post_url}} width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> 
         <span>({{post.post_url}})</span>
       </div>
       <div class="meta">
