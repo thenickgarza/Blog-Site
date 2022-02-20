@@ -128,6 +128,9 @@
     color: #7d7d7d;
   }
   
+  .post-btn-style {
+    margin: 16px;
+  }
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
